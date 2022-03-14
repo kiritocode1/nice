@@ -1,17 +1,18 @@
 // import logo from './logo.svg';
 import './App.css';
-import { animated as a, useSpring } from "react-spring";
+// import { animated as a, useSpring } from "react-spring";
+import Navbar from './Navbar';
 function App() {
 
-  const star = useSpring({
-    from: {
-      rotateZ: 0,
-      backgroundColor: "rgb(34 197 94 / var(--tw-bg-opacity))",
-    },
-    rotateZ: 180,
-    backgroundColor:"yellow",
-    loop: true,
-  });
+  // const star = useSpring({
+  //   from: {
+  //     rotateZ: 0,
+  //     backgroundColor: "rgb(34 197 94 / var(--tw-bg-opacity))",
+  //     BorderRadius:"50px",
+  //   },
+  //   rotateZ: 180,
+  //   backgroundColor:"yellow",
+  // });
 
 
 
@@ -35,7 +36,8 @@ function App() {
           Learn React
         </a> */}
       {/* </header> */}
-      <a.div className="bg-green-500 w-20 h-20" style={star}/>
+      {/* <a.div className="bg-green-500 w-20 h-20" style={star}/> */}
+      <Navbar/>
     </div>
   );
 }
