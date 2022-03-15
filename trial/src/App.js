@@ -2,6 +2,10 @@
 import './App.css';
 // import { animated as a, useSpring } from "react-spring";
 import Navbar from './Navbar';
+// import music from './Components/music';
+// import home from './Components/home';
+import { Route ,Routes, Outlet} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function App() {
 
   // const star = useSpring({
@@ -22,22 +26,14 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      {/* </header> */}
-      {/* <a.div className="bg-green-500 w-20 h-20" style={star}/> */}
       <Navbar/>
+      hello world
+      <Routes>
+        <Route path="/" element={<h1>test</h1>} />
+        <Route path='/music' element={<music/>}/>
+      </Routes>
+      <Link to="/music">Music</Link>
+      <Outlet/>
     </div>
   );
 }
