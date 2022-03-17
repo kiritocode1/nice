@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Cutive+Mono&family=Noto+Sans+JP:wght@100&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+.font-0{
+  /*! Robotic font */
+  font-family: 'Chakra Petch', sans-serif;
+}
+.font-1{
+  /* ! Monochrome font we needed  */
+  font-family: 'Cutive Mono', monospace;
+}
+.font-2{
+  /* ! japanese baby */
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.font-3{
+  /* !idk  */
+  font-family: 'Roboto', sans-serif;
+}
+.font-5{
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.font-7{
+  font-family: 'Fasthand', cursive;
+}
+.font-6{
+  font-family: 'Homemade Apple', cursive;
+}
+.font-8{
+  font-family: 'Nothing You Could Do', cursive;
+}
