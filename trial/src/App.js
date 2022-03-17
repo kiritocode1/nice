@@ -1,13 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
 // import { animated as a, useSpring } from "react-spring";
-// import Navbar from './Navbar';
-// import music from './Components/music';
-// import home from './Components/home';
+import Navbar from './Navbar';
+
 import { Route ,Routes} from 'react-router-dom';
 import Home from './Components/home';
 // import { Link } from 'react-router-dom';
 import Room from './Components/class';
+import Music from './Components/music';
+import { Link } from 'react-router-dom';
+import User from './Components/usey';
+// import { Navigate } from 'react-router-dom';
 
 
 function App() {
@@ -23,12 +26,16 @@ function App() {
   // });
   return (
     <div className="App">
-      {/* <Navbar/> */}
+      <Navbar/>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path="/music" element={<Room />} />
-        
+        <Route path='/' element={<Home/>} />
+        <Route path="/Room" element={<Room />} />
+        <Route path="/music" element={<Music />} />
+        <Route path='/user/:userId' element={<User/>}/>
       </Routes>
+      <Link to="/music"><button className='text-lg mx-2'>here</button></Link>
+      <Link to="/">here</Link>
+      <Link to="/Room">here</Link>
     </div>
   );
 }

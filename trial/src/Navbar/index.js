@@ -1,8 +1,8 @@
 import React from 'react';
 const Navbar = () => {
   return (
-    <div>
-      chu chu is dum dum bum bum chum chum
+    <div >
+      <h1>chu chu is dum dum bum bum chum chum</h1>
     </div>
   );
   };
