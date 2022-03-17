@@ -1,11 +1,15 @@
 // import logo from './logo.svg';
 import './App.css';
 // import { animated as a, useSpring } from "react-spring";
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 // import music from './Components/music';
 // import home from './Components/home';
-import { Route ,Routes, Outlet} from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Route ,Routes} from 'react-router-dom';
+import Home from './Components/home';
+// import { Link } from 'react-router-dom';
+import Room from './Components/class';
+
+
 function App() {
 
   // const star = useSpring({
@@ -17,23 +21,14 @@ function App() {
   //   rotateZ: 180,
   //   backgroundColor:"yellow",
   // });
-
-
-
-
-
-
-
   return (
     <div className="App">
-      <Navbar/>
-      hello world
+      {/* <Navbar/> */}
       <Routes>
-        <Route path="/" element={<h1>test</h1>} />
-        <Route path='/music' element={<music/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path="/music" element={<Room />} />
+        
       </Routes>
-      <Link to="/music">Music</Link>
-      <Outlet/>
     </div>
   );
 }

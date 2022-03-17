@@ -1,12 +1,9 @@
-import React from 'react';
-
-const music = () => {
-    return (<>
-        <div>
-            <h1>
-                music
-            </h1>
-        </div>
-    </>);
+function Music() {
+  return (
+    <div>
+      <h1>This is the music page</h1>
+    </div>
+  );
 }
-export default music;
+
+export default Music;
