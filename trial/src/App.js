@@ -11,10 +11,9 @@ import Music from './Components/music';
 import { Link } from 'react-router-dom';
 import User from './Components/usey';
 // import { Navigate } from 'react-router-dom';
-
-
+import { useState, useEffect } from "react";
 function App() {
-
+  const [written, setwritten] = useState("hello");
   // const star = useSpring({
   //   from: {
   //     rotateZ: 0,
@@ -24,9 +23,12 @@ function App() {
   //   rotateZ: 180,
   //   backgroundColor:"yellow",
   // });
+  useEffect(() => {
+  }, [written]);
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+      <input type="text" className="text-green-500 caret-green-300" onChange={e=>setwritten(e.target.value)} />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path="/Room" element={<Room />} />
@@ -36,6 +38,7 @@ function App() {
       <Link to="/music"><button className='text-lg mx-2'>here</button></Link>
       <Link to="/">here</Link>
       <Link to="/Room">here</Link>
+      <h1 className="font-7">{written}</h1>
     </div>
   );
 }
