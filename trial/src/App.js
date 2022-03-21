@@ -39,6 +39,9 @@ function App() {
       <Link to="/">here</Link>
       <Link to="/Room">here</Link>
       <h1 className="font-7">{written}</h1>
+      <h1 className="font-8">{written}</h1>
+      <h1 className="font-6">{written}</h1>
+      <h1 className="font-2">{written}</h1>
     </div>
   );
 }
