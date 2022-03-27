@@ -1,8 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import {useState} from "react";
+
 const Navbar = () => {
+  const [uid  , setuid]=useState("Nobody")
   return (
     <div >
-      <h1 className="font-8 text-2xl py-2">Handwriting simulator</h1>
+      <ul className='flex justify-evenly'>
+        <li><input type="text" onChange={e =>setuid(e.target.value)} /></li>
+        <li><Link to="/">home</Link></li>
+        <li><Link to="/music">Music</Link></li>
+        <li><Link to={`/user/${uid}`}>User</Link></li>
+      </ul>
     </div>
   );
   };

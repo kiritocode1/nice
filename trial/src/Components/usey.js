@@ -6,7 +6,7 @@ const User = () => {
     let params = useParams()
     return (
         <div>
-            <div className="text-9xl">
+            <div className="text-3xl">
                 hello {params.userId}
             </div>
         </div>
