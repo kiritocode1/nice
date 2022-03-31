@@ -1,12 +1,15 @@
 <script>
 	export let name;
 	export let age;
+
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<h1>{age}</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>
+		hello there {name}
+		<hr>
+		this is the first trial
+	</h1>
 </main>
 
 <style>
@@ -18,7 +21,7 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: green;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;

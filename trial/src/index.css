@@ -16,6 +16,9 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fasthand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 .font-0{
   /*! Robotic font */
   font-family: 'Chakra Petch', sans-serif;
@@ -44,4 +47,10 @@ code {
 }
 .font-8{
   font-family: 'Nothing You Could Do', cursive;
+}
+.font-9{
+  font-family: 'League Script', cursive;
+}
+.font-10{
+  font-family: 'Reenie Beanie', cursive;
 }
