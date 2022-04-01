@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 // import { animated as a, useSpring } from "react-spring";
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 // import {useState}from "react"
 import { Route ,Routes} from 'react-router-dom';
 import Home from './Components/home';
@@ -24,7 +24,7 @@ function App() {
   // }, [written]);
   return (
     <div className="App bg-[#0f172a] text-white">
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <textarea className="resize font-mono caret-white text-white focus:border-blue-300 focus:outline-none bg-[#1e293b] rounded-md" type="text" placeholder='enter the text here'  onChange={e =>setwritten(e.target.value)} />
       {/* <input type="text" className="text-green-500 caret-green-300" onChange={e=>setwritten(e.target.value)} /> */}
 
@@ -35,6 +35,7 @@ function App() {
       <h1 className='font-6'>{written}</h1>
       <h1 className="font-9">{written}</h1>
       <h1 className='font-10'>{written}</h1> */} 
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/HandWriting/:id' element={<HandWriting/>}/>
