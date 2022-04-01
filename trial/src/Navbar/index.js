@@ -5,14 +5,14 @@ import React from 'react';
 const Navbar = () => {
   // const [uid  , setuid]=useState("Nobody")
   return (
-    <div >
+    <div  className='w-full text-center font-1 text-2xl h-8 '>
       {/* <ul className='flex justify-evenly'>
         <li><input type="text" onChange={e =>setuid(e.target.value)} /></li>
         <li><Link to="/">home</Link></li>
         <li><Link to="/music">Music</Link></li>
         <li><Link to={`/user/${uid}`}>User</Link></li>
       </ul> */}
-      Title here 
+      Text TO handWriting  
     </div>
   );
   };

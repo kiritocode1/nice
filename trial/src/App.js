@@ -23,7 +23,7 @@ function App() {
   // useEffect(() => {
   // }, [written]);
   return (
-    <div className="App bg-[#0f172a] text-white">
+    <div className="App bg-[#0f172a] text-white h-[34rem]">
       {/* <Navbar /> */}
       {/* <textarea className="resize font-mono caret-white text-white focus:border-blue-300 focus:outline-none bg-[#1e293b] rounded-md" type="text" placeholder='enter the text here'  onChange={e =>setwritten(e.target.value)} />
       {/* <input type="text" className="text-green-500 caret-green-300" onChange={e=>setwritten(e.target.value)} /> */}
