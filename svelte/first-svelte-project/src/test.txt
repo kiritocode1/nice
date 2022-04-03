@@ -1,0 +1,1 @@
+svelte is a h=jsvascript api that dynamically renders things , kinda like hot reload but not really 

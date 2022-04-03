@@ -38,7 +38,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/HandWriting/:id' element={<HandWriting/>}/>
+        <Route path='/HandWriting/:id/:text' element={<HandWriting/>}/>
         {/* <Route path="/Room" element={<Room />} />
         <Route path="/music" element={<Music />} />
         <Route path='/user/:userId' element={<User/>}/> */}
